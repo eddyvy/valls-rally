@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import coche from './assets/coche.svg';
 import './App.css';
+import Inicio from './components/Inicio'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App-header mt-3 mb-2">
+        <img src={coche} className="App-logo" alt="logo" />
+        <h3>
+          Rally Valls
+        </h3>
       </header>
+      <Inicio/>
     </div>
   );
 }
