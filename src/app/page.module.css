@@ -1,0 +1,60 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 6rem;
+  min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  text-align: center;
+}
+
+.center::after {
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+  z-index: -1;
+}
+
+.center h1 {
+  font-size: 40px;
+}
+
+.center p {
+  margin-top: 15px;
+}
+
+.selector {
+  margin: 20px 0;
+}
+
+.botonera {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  align-items: flex-end;
+  max-width: 700px;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.botoneraSmall {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.botoneraVarios {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 7px;
+}

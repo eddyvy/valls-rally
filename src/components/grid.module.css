@@ -1,0 +1,60 @@
+.grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid #111827;
+  border-radius: 10px;
+  text-align: left;
+  font-family: var(--font-mono);
+}
+
+.gridRow {
+  display: grid;
+  grid-template-columns: 1fr 4fr 3fr 3fr 1fr;
+  column-gap: 5px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #111827;
+  align-items: center;
+}
+
+.gridRow:hover, .gridRowSelected {
+  background: rgba(var(--card-rgb), 0.3);
+  cursor: pointer;
+}
+
+.gridRowLast {
+  border-bottom: none;
+}
+
+.gridRowHead {
+  background-color: #111827;
+  color: white;
+  font-size: small;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px
+}
+
+.gridRowHead:hover {
+  background: #111827;
+  cursor: default;
+}
+
+.gridBold {
+  font-weight: 700;
+}
+
+.gridHighlight {
+  color: rgb(176, 4, 4);
+}
+
+.gridUnderline {
+  text-decoration: underline;
+}
+
+.gridText {
+  font-size: small;
+  padding-left: 2px;
+}
